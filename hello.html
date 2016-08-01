@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/angular.min.js"></script>
+</head>
+<body>
+   <h1>demo1</h1>
+    <div ng-controller="myController">
+        <h2>当前时间：{{clock.now | date:'medium'}}</h2>
+    </div>
+
+    <h1>demo2</h1>
+    <input type="text" ng-model="yourname" placeholder="world">
+     <hr>
+     Hello {{yourname || 'World'}};
+
+</body>
+<script src="js/app.js"></script>
+</html>
